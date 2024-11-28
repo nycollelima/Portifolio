@@ -1,0 +1,143 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+}
+
+h1 {
+  font-size: 6em;
+  margin: 0;
+  font-family: "Italiana", serif;
+}
+
+h2 {
+  font-size: 3em;
+  margin:0;
+  font-family: "Italiana", serif;
+}
+
+.subtitle {
+  font-size: 1em;
+  font-family: "Hubballi", sans-serif;
+  color: lightgreen;
+  margin: 0;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.5em;
+  color: lightgreen;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: black;
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-family: "Hubballi", sans-serif;
+  font-size: 1em;
+  display: block;
+  border-bottom: 1px solid lightgreen;
+}
+
+.dropdown a:last-child {
+  border-bottom: none;
+}
+
+.dropdown a:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius:50%;
+  border: 3px solid lightgreen;
+  object-fit: cover;
+}
+
+.text-box {
+  background-color: #1e1e1e;
+  border: 2px solid lightgreen;
+  border-radius: 9px;
+  padding: 5px 5px;
+  margin: 20px auto;
+  max-width: 80%;
+  color: lightgray;
+  text-align: justify;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.about-text {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-top: 20px;
+  color: lightgray;
+  text-align: center;
+  max-width: 80%;
+  margin: 20px auto;
+}
+.project-description {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: lightgray;
+  max-width: 80%;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; 
+  margin-top: 20px;
+}
+
+.image-item img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 2px solid lightgreen;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.image-item img:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.5); 
+}
+
